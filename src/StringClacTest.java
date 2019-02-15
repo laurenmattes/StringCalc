@@ -112,4 +112,26 @@ class StringClacTest {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	void test11() {
+		String number = ("21,6");
+		String expected = "27";
+
+		String actual = StringCalc.add(number);
+
+		assertEquals(expected, actual);
+
+	}
+
+	@Test
+	void test12() {
+		String number = ("2,7");
+		String expected = "9";
+
+		String actual = StringCalc.add(number);
+
+		assertEquals(expected, actual);
+
+	}
+
 }
